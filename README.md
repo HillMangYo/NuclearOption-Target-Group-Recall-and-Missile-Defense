@@ -61,14 +61,3 @@ You can change the buttons, hold times, enable Group 2, disable Group 1 auto-sav
 ## NO Tactitools compatibility
 
 NO Tactitools has its own target-group controls. When both mods are installed, this mod blocks only NO Tactitools' duplicate save and recall actions by default. Its other target controls continue to work.
-
-## Building from source
-
-Place the repository folder directly inside the Nuclear Option game folder, then run:
-
-```powershell
-dotnet restore .\NuclearOption-Target-Group-Recall-and-Missile-Defense.csproj --ignore-failed-sources
-dotnet build .\NuclearOption-Target-Group-Recall-and-Missile-Defense.csproj -c Release --no-restore
-```
-
-The project builds against the game and BepInEx files already installed on your computer. It does not download any code packages.
