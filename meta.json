@@ -1,0 +1,15 @@
+{
+  "id": "NuclearOption-Target-Group-Recall-and-Missile-Defense",
+  "artifact": {
+    "fileName": "NuclearOption-Target-Group-Recall-and-Missile-Defense.dll",
+    "version": "1.0.0",
+    "category": "release",
+    "type": "plugin",
+    "gameVersion": "0.34",
+    "downloadUrl": null,
+    "hash": "sha256:9bded5167d8a80b2ac5e97ee042e17e33fee64ea51276e01a25c4bcd38001bc8",
+    "extends": null,
+    "dependencies": [],
+    "incompatibilities": []
+  }
+}

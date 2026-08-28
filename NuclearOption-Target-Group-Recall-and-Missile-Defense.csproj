@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>NuclearOption-Target-Group-Recall-and-Missile-Defense</AssemblyName>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>11.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Deterministic>true</Deterministic>
+    <NoWarn>$(NoWarn);MSB3277</NoWarn>
+    <NuclearOptionRoot Condition="'$(NuclearOptionRoot)' == '' and Exists('..\BepInEx\core\BepInEx.dll')">..</NuclearOptionRoot>
+    <NuclearOptionRoot Condition="'$(NuclearOptionRoot)' == '' and Exists('..\..\BepInEx\core\BepInEx.dll')">..\..</NuclearOptionRoot>
+    <NuclearOptionRoot Condition="'$(NuclearOptionRoot)' == ''">..</NuclearOptionRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(NuclearOptionRoot)\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(NuclearOptionRoot)\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(NuclearOptionRoot)\NuclearOption_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>$(NuclearOptionRoot)\NuclearOption_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>$(NuclearOptionRoot)\NuclearOption_Data\Managed\Rewired_Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Mirage">
+      <HintPath>$(NuclearOptionRoot)\NuclearOption_Data\Managed\Mirage.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(NuclearOptionRoot)\NuclearOption_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(NuclearOptionRoot)\NuclearOption_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(NuclearOptionRoot)\NuclearOption_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
